@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff0f5" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon-192.png" />
+    <title>FaceFit - JOY365</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #fff0f5;
+        margin: 0;
+        padding: 20px;
+        direction: rtl;
+        text-align: center;
+      }
+      .logo {
+        width: 140px;
+        margin: 20px auto;
+      }
+      .title {
+        color: #d63384;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .subtitle {
+        color: #555;
+        margin-top: -10px;
+        margin-bottom: 20px;
+      }
+      .card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin: 10px auto;
+        padding: 20px;
+        max-width: 400px;
+        text-align: right;
+      }
+      button {
+        background-color: #d63384;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      input[type="file"] {
+        margin: 20px auto;
+        display: block;
+      }
+    </style>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
+  </head>
+  <body>
+    <img src="icon-192.png" alt="JOY365 Logo" class="logo" />
+    <h1 class="title">FaceFit</h1>
+    <p class="subtitle">התאמה חכמה, תוצאה מדויקת, כל יום מחדש</p>
+    <input type="file" accept="image/*" />
+    <div class="card">
+      <h2>בחרי תת־בעיה שתרצי לטפל בה:</h2>
+      <button>קמטים וקימטוטים</button>
+      <button>פיגמנטציה</button>
+      <button>אקנה</button>
+    </div>
+  </body>
+</html>
