@@ -1,0 +1,1 @@
+תיעוד לפיתוח React Native
