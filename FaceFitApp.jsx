@@ -1,0 +1,3 @@
+import React, { useState } from "react";
+... (כל הקוד כאן ייכנס - קיצור לצורך ההדגמה) ...
+}
